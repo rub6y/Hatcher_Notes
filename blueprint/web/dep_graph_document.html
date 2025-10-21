@@ -1,0 +1,720 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dependency graph</title>
+  <meta name="generator" content="plasTeX" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/theme-white.css" />
+  <link rel="stylesheet" href="styles/dep_graph.css" />
+  
+  <script type="text/x-mathjax-config">
+  
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">  </script>
+
+
+<link rel="stylesheet" href="styles/extra_styles.css" />
+
+</head>
+
+<body>
+<header>
+  <a class="toc" href="index.html">Home</a>
+  <h1 id="doc_title">Dependencies</h1>
+</header>
+<div class="wrapper">
+<div class="content">
+  <div id="Legend">
+    <span id="legend_title" class="title">Legend
+    <div class="btn">
+       <div class="bar"></div>
+       <div class="bar"></div>
+       <div class="bar"></div>
+    </div></span> 
+    <dl class="legend">
+      
+      <dt>Boxes</dt><dd>definitions</dd>
+      
+      <dt>Ellipses</dt><dd>theorems and lemmas</dd>
+      
+      <dt>Blue border</dt><dd>the <em>statement</em> of this result is ready to be formalized; all prerequisites are done</dd>
+      
+      <dt>Orange border</dt><dd>the <em>statement</em> of this result is not ready to be formalized; the blueprint needs more work</dd>
+      
+      <dt>Blue background</dt><dd>the <em>proof</em> of this result is ready to be formalized; all prerequisites are done</dd>
+      
+      <dt>Green border</dt><dd>the <em>statement</em> of this result is formalized</dd>
+      
+      <dt>Green background</dt><dd>the <em>proof</em> of this result is formalized</dd>
+      
+      <dt>Dark green background</dt><dd>the <em>proof</em> of this result and all its ancestors are formalized</dd>
+      
+      <dt>Dark green border</dt><dd>this is in Mathlib</dd>
+      
+    </dl>
+  </div>
+    <div id="graph"></div>
+<div id="statements">
+
+    
+    <div class="dep-modal-container" id="def:fundamental_group_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:fundamental_group" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">14</span><span class="definition_thmtitle">Fundamental Group</span></div>
+    <div class="thm_thmcontent">
+<p>We definie the fundamental group of \((\pi _1(X, x_0),\cdot )\) as the set of equvialence classes of relation \(\simeq \) with the operation \(\cdot \) - composition of loops </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#def:fundamental_group">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:homotopy_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:homotopy" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">1</span><span class="definition_thmtitle">Homotopy of maps</span></div>
+    <div class="thm_thmcontent">
+<p>Let \(X,Y\) be topological spaces. We say that maps \(f,g : X \to Y\) are homotopic (\(f \simeq g\)) iff there exists a continoues map \(H : X \times I \to Y\) such that for any \(x \in X\) </p>
+<div class="displaymath" id="a0000000004">
+  \[ H(x,0) = f(x) \text{ and } H(x,1) = g(x) \]
+</div>
+<p>. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#def:homotopy">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:loop_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:loop" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">3</span><span class="definition_thmtitle">Loop</span></div>
+    <div class="thm_thmcontent">
+<p>A loop is a path where \(x = y\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#def:loop">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:path_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:path" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">2</span><span class="definition_thmtitle">Path</span></div>
+    <div class="thm_thmcontent">
+<p>A path between points \(x,y \in X\) is a continoues function \(\gamma : I \to X\) such that </p>
+<div class="displaymath" id="a0000000005">
+  \[ \gamma (0) = x \text{ and } \gamma (1) = y \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0002.html#def:path">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:path_composition_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:path_composition" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">8</span><span class="definition_thmtitle">Composition of paths</span></div>
+    <div class="thm_thmcontent">
+<p>Given to paths \(\gamma _1, \gamma _2\) we definte \(\gamma _1 \cdot \gamma _2\) by the formula: </p>
+<div class="displaymath" id="a0000000006">
+  \[  \gamma _1 \cdot \gamma _2 (t) = \begin{cases}  \gamma _1(2s), &  \text{if } t \leq \frac{1}{2}, \\ \gamma _2(1-2s), &  \text{if } t \geq \frac{1}{2} \end{cases}  \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0002.html#def:path_composition">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:path_homotopy_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:path_homotopy" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">4</span><span class="definition_thmtitle">Homotopy of Paths</span></div>
+    <div class="thm_thmcontent">
+<p>We say that two paths \(\gamma _1, \gamma _2\) (\(\gamma _1 \simeq _p \gamma _2\)) from \(x\) to \(y\) are homotopic iff there exists homotopy map \(H : I \times I \to X\) such that H is homotopy of \(\gamma _1, \gamma _2\) and for all \(t \in I\) function \(H(\cdot , t)\) is a path from \(x\) to \(y\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#def:path_homotopy">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:loop_comp_assoc_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:loop_comp_assoc" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">15</span><span class="lemma_thmtitle">Composition is associative</span></div>
+    <div class="thm_thmcontent">
+<p>The operation \(\cdot \) is associative. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:loop_comp_assoc">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:loop_comp_homoclass_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:loop_comp_homoclass" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">13</span><span class="lemma_thmtitle">Composition of loops depend on homotopy class</span></div>
+    <div class="thm_thmcontent">
+<p>If \(f_0 \simeq _p f_1\) and \(g_0 \simeq _p g_1\) then \(f_0 \cdot g_0 \simeq _p f_1 \cdot g_1\) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:loop_comp_homoclass">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:loop_comp_inv_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:loop_comp_inv" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">17</span><span class="lemma_thmtitle">Composition has inverse</span></div>
+    <div class="thm_thmcontent">
+<p>For every element of \(\pi _1(X, x_0)\) there exists an inverse such that: </p>
+<p>\([f] \cdot [g] = [\text{const}_{x_0}]\) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:loop_comp_inv">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:loop_comp_loop_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:loop_comp_loop" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">12</span><span class="lemma_thmtitle">Composition of loops is a loop</span></div>
+    <div class="thm_thmcontent">
+<p>Composition of loops is a loop. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:loop_comp_loop">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:loop_comp_neutral_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:loop_comp_neutral" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">16</span><span class="lemma_thmtitle">Composition has natural element</span></div>
+    <div class="thm_thmcontent">
+<p>There is an neutral element of \(\cdot \), which is \([\text{const}_{x_0}]_{\simeq }\) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:loop_comp_neutral">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:path_comp_homoclass_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:path_comp_homoclass" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">10</span><span class="lemma_thmtitle">Composition of paths depend on homotopy class</span></div>
+    <div class="thm_thmcontent">
+<p>If \(f_0 \simeq _p f_1\) and \(g_0 \simeq _p g_1\) then \(f_0 \cdot g_0 \simeq _path f_1 \cdot g_1\) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:path_comp_homoclass">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:path_comp_path_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:path_comp_path" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">9</span><span class="lemma_thmtitle">Composition of paths is a path</span></div>
+    <div class="thm_thmcontent">
+<p>Composition of paths is a path (The map given by <a href="sect0002.html#def:path_composition">8</a> is continoues) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:path_comp_path">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:Rn_path_equiv_lemma_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:Rn_path_equiv_lemma" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      Lemma
+      </span>
+      <span class="lemma_thmlabel">5</span><span class="lemma_thmtitle">All paths from \(x\) to \(y\) in \(\mathbb {R}^n\) are Homotopic</span></div>
+    <div class="thm_thmcontent">
+<p>Any two paths \(\gamma _1, \gamma _2\) from \(x\) to \(y\) in \(\mathbb {R}^n\) are homotopic. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lem:Rn_path_equiv_lemma">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="thm:fundamental_group_is_group_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="thm:fundamental_group_is_group" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">18</span><span class="theorem_thmtitle">Fundamental Group is a Group</span></div>
+    <div class="thm_thmcontent">
+<p>The fundamental group is a group </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#thm:fundamental_group_is_group">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="thm:homotopy_equiv_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="thm:homotopy_equiv" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">6</span><span class="theorem_thmtitle">Homotopy is equvialence relation</span></div>
+    <div class="thm_thmcontent">
+<p>Relation \(\simeq \) is an equvialence relation. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#thm:homotopy_equiv">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="thm:loop_homotopy_equiv_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="thm:loop_homotopy_equiv" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">11</span><span class="theorem_thmtitle">Homotopy of loops is equvialence relation</span></div>
+    <div class="thm_thmcontent">
+<p>Relation \(\simeq _l\) of loops is an equvialence relation. (We use \(\simeq \) to simplify notation) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#thm:loop_homotopy_equiv">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="thm:path_homotopy_equiv_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="thm:path_homotopy_equiv" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">7</span><span class="theorem_thmtitle">Homotopy of paths is equvialence relation</span></div>
+    <div class="thm_thmcontent">
+<p>Relation \(\simeq _p\) of paths is an equvialence relation. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#thm:path_homotopy_equiv">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="thm:Rn_fundamental_group_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="thm:Rn_fundamental_group" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">19</span><span class="theorem_thmtitle">Fundamental Group of \(\mathbb {R}^n\)</span></div>
+    <div class="thm_thmcontent">
+<p>The fundamental group of \(\mathbb {R}^n\) is trivial </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#thm:Rn_fundamental_group">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+</div>
+</div> <!-- content -->
+</div> <!-- wrapper -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<script src="js/d3.min.js"></script>
+<script src="js/hpcc.min.js"></script>
+<script src="js/d3-graphviz.js"></script>
+
+<script type="text/javascript">
+const graphContainer = d3.select("#graph");
+const width = graphContainer.node().clientWidth;
+const height = graphContainer.node().clientHeight;
+
+
+graphContainer.graphviz({useWorker: true})
+    .width(width)
+    .height(height)
+    .fit(true)
+    .renderDot(`strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lem:loop_comp_assoc"	[label=loop_comp_assoc,		shape=ellipse];	"thm:fundamental_group_is_group"	[label=fundamental_group_is_group,		shape=ellipse];	"lem:loop_comp_assoc" -> "thm:fundamental_group_is_group"	[style=dashed];	"thm:Rn_fundamental_group"	[label=Rn_fundamental_group,		shape=ellipse];	"thm:fundamental_group_is_group" -> "thm:Rn_fundamental_group"	[style=dashed];	"def:loop"	[label=loop,		shape=box];	"lem:loop_comp_loop"	[label=loop_comp_loop,		shape=ellipse];	"def:loop" -> "lem:loop_comp_loop"	[style=dashed];	"lem:loop_comp_homoclass"	[label=loop_comp_homoclass,		shape=ellipse];	"lem:loop_comp_loop" -> "lem:loop_comp_homoclass"	[style=dashed];	"def:fundamental_group"	[label=fundamental_group,		shape=box];	"lem:loop_comp_homoclass" -> "def:fundamental_group"	[style=dashed];	"lem:loop_comp_inv"	[label=loop_comp_inv,		shape=ellipse];	"lem:loop_comp_inv" -> "thm:fundamental_group_is_group"	[style=dashed];	"def:fundamental_group" -> "lem:loop_comp_assoc"	[style=dashed];	"def:fundamental_group" -> "lem:loop_comp_inv"	[style=dashed];	"lem:loop_comp_neutral"	[label=loop_comp_neutral,		shape=ellipse];	"def:fundamental_group" -> "lem:loop_comp_neutral"	[style=dashed];	"lem:loop_comp_neutral" -> "thm:fundamental_group_is_group"	[style=dashed];	"thm:loop_homotopy_equiv"	[label=loop_homotopy_equiv,		shape=ellipse];	"thm:loop_homotopy_equiv" -> "lem:loop_comp_homoclass"	[style=dashed];	"def:homotopy"	[color=blue,		fillcolor="#A3D6FF",		label=homotopy,		shape=box,		style=filled];	"thm:homotopy_equiv"	[label=homotopy_equiv,		shape=ellipse];	"def:homotopy" -> "thm:homotopy_equiv"	[style=dashed];	"def:path_homotopy"	[label=path_homotopy,		shape=box];	"def:homotopy" -> "def:path_homotopy"	[style=dashed];	"thm:path_homotopy_equiv"	[label=path_homotopy_equiv,		shape=ellipse];	"thm:homotopy_equiv" -> "thm:path_homotopy_equiv"	[style=dashed];	"def:path_homotopy" -> "thm:path_homotopy_equiv"	[style=dashed];	"lem:Rn_path_equiv_lemma"	[label=Rn_path_equiv_lemma,		shape=ellipse];	"def:path_homotopy" -> "lem:Rn_path_equiv_lemma"	[style=dashed];	"thm:path_homotopy_equiv" -> "thm:loop_homotopy_equiv"	[style=dashed];	"lem:path_comp_homoclass"	[label=path_comp_homoclass,		shape=ellipse];	"thm:path_homotopy_equiv" -> "lem:path_comp_homoclass"	[style=dashed];	"lem:Rn_path_equiv_lemma" -> "thm:Rn_fundamental_group"	[style=dashed];	"lem:path_comp_homoclass" -> "lem:loop_comp_homoclass"	[style=dashed];	"def:path_composition"	[label=path_composition,		shape=box];	"def:path_composition" -> "lem:path_comp_homoclass"	[style=dashed];	"lem:path_comp_path"	[label=path_comp_path,		shape=ellipse];	"def:path_composition" -> "lem:path_comp_path"	[style=dashed];	"lem:path_comp_path" -> "lem:loop_comp_loop"	[style=dashed];	"def:path"	[color=blue,		fillcolor="#A3D6FF",		label=path,		shape=box,		style=filled];	"def:path" -> "def:loop"	[style=dashed];	"def:path" -> "def:path_homotopy"	[style=dashed];	"def:path" -> "def:path_composition"	[style=dashed];}`)
+    .on("end", interactive);
+
+latexLabelEscaper = function(label) {
+  return label.replace(/\./g, '\\.').replace(/:/g, '\\:')
+}
+
+clickNode = function() {
+  $("#statements div").hide()
+  var node_id = $('text', this).text();
+  $('.thm').hide();
+  $('#'+latexLabelEscaper(node_id)).show().children().show();
+}
+function interactive() {
+    $("span#legend_title").on("click", function () {
+           $(this).siblings('dl').toggle();
+        })
+
+    d3.selectAll('.node')
+        .attr('pointer-events', 'fill')
+        .on('click', function () {
+           var title = d3.select(this).selectAll('title').text().trim();
+           $('#statements > div').hide()
+           $('.thm').hide();
+           $('#'+latexLabelEscaper(title)+'_modal').show().children().show().children().show();
+           $('#statements').show()
+        });
+
+    d3.selectAll('.dep-closebtn').on('click', function() {
+        var modal =
+            d3.select(this).node().parentNode.parentNode.parentNode ;
+        d3.select(modal).style('display', 'none');
+    });
+}
+
+</script>
+
+</body>
+</html>
