@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.23)  19 OCT 2025 01:02
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.23)  21 OCT 2025 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,6 +473,15 @@ and I'll forget about whatever was undefined.
 
 ./content.tex:86: Undefined control sequence.
 l.86         \uses
+                  {def:path}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:97: Undefined control sequence.
+l.97         \uses
                   {def:path,def:path_composition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -480,16 +489,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:86: Missing $ inserted.
+./content.tex:97: Missing $ inserted.
 <inserted text> 
                 $
-l.86         \uses{def:path,def:path_
+l.97         \uses{def:path,def:path_
                                      composition}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:86: Extra }, or forgotten $.
-l.86         \uses{def:path,def:path_composition}
+./content.tex:97: Extra }, or forgotten $.
+l.97         \uses{def:path,def:path_composition}
                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -497,18 +506,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:87: Missing $ inserted.
+./content.tex:98: Missing $ inserted.
 <inserted text> 
                 $
-l.87 
+l.98 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:87: Missing } inserted.
+./content.tex:98: Missing } inserted.
 <inserted text> 
                 }
-l.87 
+l.98 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -517,27 +526,75 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Warning: Reference `def:path_composition' on page 2 undefined on input line 88.
+LaTeX Warning: Reference `def:path_composition' on page 2 undefined on input line 99.
 
-./content.tex:93: Undefined control sequence.
-l.93         \uses
-                  {def:path, def:path_composition, def:path_homotopy,thm:pat...
+./content.tex:104: Undefined control sequence.
+l.104         \uses
+                   {def:path,def:path_inverse}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:93: Missing $ inserted.
+./content.tex:104: Missing $ inserted.
 <inserted text> 
                 $
-l.93         \uses{def:path, def:path_
-                                      composition, def:path_homotopy,thm:pat...
+l.104         \uses{def:path,def:path_
+                                      inverse}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:93: Extra }, or forgotten $.
-l.93 ...def:path_homotopy,thm:path_homotopy_equiv}
+./content.tex:104: Extra }, or forgotten $.
+l.104         \uses{def:path,def:path_inverse}
+                                              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:105: Missing $ inserted.
+<inserted text> 
+                $
+l.105 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:105: Missing } inserted.
+<inserted text> 
+                }
+l.105 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Reference `def:path_inverse' on page 2 undefined on input line 106.
+
+./content.tex:111: Undefined control sequence.
+l.111         \uses
+                   {def:path, def:path_composition, def:path_homotopy,thm:pa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:111: Missing $ inserted.
+<inserted text> 
+                $
+l.111         \uses{def:path, def:path_
+                                       composition, def:path_homotopy,thm:pa...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:111: Extra }, or forgotten $.
+l.111 ...ef:path_homotopy,thm:path_homotopy_equiv}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -545,19 +602,19 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:94: Missing $ inserted.
+./content.tex:112: Missing $ inserted.
 <inserted text> 
                 $
-l.94 
-     
+l.112 
+      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:94: Missing } inserted.
+./content.tex:112: Missing } inserted.
 <inserted text> 
                 }
-l.94 
-     
+l.112 
+      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -565,12 +622,62 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (82.71338pt too wide) in paragraph at lines 93--94
-[]\TU/lmr/bx/n/10 Lemma 10 \TU/lmr/m/n/10 (Composition of paths depend on homotopy class)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 def:path, def:path$[]\OML/cmm/m/it/10 omposition; def \OT1/cmr/m/n/10 :
+Overfull \hbox (82.71338pt too wide) in paragraph at lines 111--112
+[]\TU/lmr/bx/n/10 Lemma 12 \TU/lmr/m/n/10 (Composition of paths depend on homotopy class)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 def:path, def:path$[]\OML/cmm/m/it/10 omposition; def \OT1/cmr/m/n/10 :
  []
 
-./content.tex:100: Undefined control sequence.
-l.100         \uses
+./content.tex:118: Undefined control sequence.
+l.118         \uses
+                   {def:path, def:path_inverse, def:path_homotopy,thm:path_h...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:118: Missing $ inserted.
+<inserted text> 
+                $
+l.118         \uses{def:path, def:path_
+                                       inverse, def:path_homotopy,thm:path_h...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:118: Extra }, or forgotten $.
+l.118 ...ef:path_homotopy,thm:path_homotopy_equiv}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:119: Missing $ inserted.
+<inserted text> 
+                $
+l.119 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:119: Missing } inserted.
+<inserted text> 
+                }
+l.119 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (37.71239pt too wide) in paragraph at lines 118--119
+[]\TU/lmr/bx/n/10 Lemma 13 \TU/lmr/m/n/10 (Inverse of paths depend on homotopy class)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 def:path, def:path$[]\OML/cmm/m/it/10 nverse; def \OT1/cmr/m/n/10 :
+ []
+
+./content.tex:125: Undefined control sequence.
+l.125         \uses
                    {thm:path_homotopy_equiv, def:path_homotopy}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -578,16 +685,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:100: Missing $ inserted.
+./content.tex:125: Missing $ inserted.
 <inserted text> 
                 $
-l.100         \uses{thm:path_
+l.125         \uses{thm:path_
                              homotopy_equiv, def:path_homotopy}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:100: Extra }, or forgotten $.
-l.100 ...m:path_homotopy_equiv, def:path_homotopy}
+./content.tex:125: Extra }, or forgotten $.
+l.125 ...m:path_homotopy_equiv, def:path_homotopy}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -595,18 +702,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:101: Missing $ inserted.
+./content.tex:126: Missing $ inserted.
 <inserted text> 
                 $
-l.101 
+l.126 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:101: Missing } inserted.
+./content.tex:126: Missing } inserted.
 <inserted text> 
                 }
-l.101 
+l.126 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -615,12 +722,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (37.86148pt too wide) in paragraph at lines 100--101
-[]\TU/lmr/bx/n/10 Theorem 11 \TU/lmr/m/n/10 (Homotopy of loops is equvialence relation)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 thm:path$[]\OML/cmm/m/it/10 omotopy[]quiv; def \OT1/cmr/m/n/10 :
+Overfull \hbox (37.86148pt too wide) in paragraph at lines 125--126
+[]\TU/lmr/bx/n/10 Theorem 14 \TU/lmr/m/n/10 (Homotopy of loops is equvialence relation)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 thm:path$[]\OML/cmm/m/it/10 omotopy[]quiv; def \OT1/cmr/m/n/10 :
  []
 
-./content.tex:107: Undefined control sequence.
-l.107         \uses
+./content.tex:132: Undefined control sequence.
+l.132         \uses
                    {def:loop, lem:path_comp_path}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -628,16 +735,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:107: Missing $ inserted.
+./content.tex:132: Missing $ inserted.
 <inserted text> 
                 $
-l.107         \uses{def:loop, lem:path_
+l.132         \uses{def:loop, lem:path_
                                        comp_path}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:107: Extra }, or forgotten $.
-l.107         \uses{def:loop, lem:path_comp_path}
+./content.tex:132: Extra }, or forgotten $.
+l.132         \uses{def:loop, lem:path_comp_path}
                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -645,18 +752,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:108: Missing $ inserted.
+./content.tex:133: Missing $ inserted.
 <inserted text> 
                 $
-l.108 
+l.133 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:108: Missing } inserted.
+./content.tex:133: Missing } inserted.
 <inserted text> 
                 }
-l.108 
+l.133 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -664,8 +771,56 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./content.tex:114: Undefined control sequence.
-l.114         \uses
+./content.tex:139: Undefined control sequence.
+l.139         \uses
+                   {def:loop,def:path_inverse_path}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:139: Missing $ inserted.
+<inserted text> 
+                $
+l.139         \uses{def:loop,def:path_
+                                      inverse_path}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:139: Extra }, or forgotten $.
+l.139 ...    \uses{def:loop,def:path_inverse_path}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:140: Missing $ inserted.
+<inserted text> 
+                $
+l.140 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:140: Missing } inserted.
+<inserted text> 
+                }
+l.140 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Reference `def:path_inverse' on page 2 undefined on input line 141.
+
+./content.tex:146: Undefined control sequence.
+l.146         \uses
                    {lem:loop_comp_loop, lem:path_comp_homoclass, thm:loop_ho...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -673,16 +828,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:114: Missing $ inserted.
+./content.tex:146: Missing $ inserted.
 <inserted text> 
                 $
-l.114         \uses{lem:loop_
+l.146         \uses{lem:loop_
                              comp_loop, lem:path_comp_homoclass, thm:loop_ho...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:114: Extra }, or forgotten $.
-l.114 ..._comp_homoclass, thm:loop_homotopy_equiv}
+./content.tex:146: Extra }, or forgotten $.
+l.146 ..._comp_homoclass, thm:loop_homotopy_equiv}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -690,18 +845,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:115: Missing $ inserted.
+./content.tex:147: Missing $ inserted.
 <inserted text> 
                 $
-l.115 
+l.147 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:115: Missing } inserted.
+./content.tex:147: Missing } inserted.
 <inserted text> 
                 }
-l.115 
+l.147 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -710,48 +865,48 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (31.1311pt too wide) in paragraph at lines 114--115
-[]\TU/lmr/bx/n/10 Lemma 13 \TU/lmr/m/n/10 (Composition of loops depend on homotopy class)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 lem:loop$[]\OML/cmm/m/it/10 omp[]oop; lem \OT1/cmr/m/n/10 :
+Overfull \hbox (31.1311pt too wide) in paragraph at lines 146--147
+[]\TU/lmr/bx/n/10 Lemma 17 \TU/lmr/m/n/10 (Composition of loops depend on homotopy class)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 lem:loop$[]\OML/cmm/m/it/10 omp[]oop; lem \OT1/cmr/m/n/10 :
  []
 
-./content.tex:121: Undefined control sequence.
-l.121         \uses
-                   {lem:loop_comp_homoclass}
+./content.tex:153: Undefined control sequence.
+l.153         \uses
+                   {lem:loop_inverse_loop, lem:path_inverse_homoclass, thm:l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:121: Missing $ inserted.
+./content.tex:153: Missing $ inserted.
 <inserted text> 
                 $
-l.121         \uses{lem:loop_
-                             comp_homoclass}
+l.153         \uses{lem:loop_
+                             inverse_loop, lem:path_inverse_homoclass, thm:l...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:121: Extra }, or forgotten $.
-l.121         \uses{lem:loop_comp_homoclass}
-                                            
+./content.tex:153: Extra }, or forgotten $.
+l.153 ...verse_homoclass, thm:loop_homotopy_equiv}
+                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:122: Missing $ inserted.
+./content.tex:154: Missing $ inserted.
 <inserted text> 
                 $
-l.122 
+l.154 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:122: Missing } inserted.
+./content.tex:154: Missing } inserted.
 <inserted text> 
                 }
-l.122 
+l.154 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -759,8 +914,63 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./content.tex:129: Undefined control sequence.
-l.129         \uses
+
+Overfull \hbox (17.0158pt too wide) in paragraph at lines 153--154
+[]\TU/lmr/bx/n/10 Lemma 18 \TU/lmr/m/n/10 (Inverse of loops depend on homotopy class)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 lem:loop$[]\OML/cmm/m/it/10 nverse[]oop; lem \OT1/cmr/m/n/10 :
+ []
+
+./content.tex:160: Undefined control sequence.
+l.160         \uses
+                   {lem:loop_comp_homoclass, lem:loop_inverse_homoclass}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:160: Missing $ inserted.
+<inserted text> 
+                $
+l.160         \uses{lem:loop_
+                             comp_homoclass, lem:loop_inverse_homoclass}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:160: Extra }, or forgotten $.
+l.160 ...mp_homoclass, lem:loop_inverse_homoclass}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:161: Missing $ inserted.
+<inserted text> 
+                $
+l.161 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:161: Missing } inserted.
+<inserted text> 
+                }
+l.161 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (55.6077pt too wide) in paragraph at lines 160--161
+[]\TU/lmr/bx/n/10 Definition 19 \TU/lmr/m/n/10 (Fundamental Group)\TU/lmr/bx/n/10 . \TU/lmr/m/n/10 lem:loop$[]\OML/cmm/m/it/10 omp[]omoclass; lem \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 loop[]nverse[]omoclass[]$ 
+ []
+
+./content.tex:168: Undefined control sequence.
+l.168         \uses
                    {def:fundamental_group}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -768,16 +978,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:129: Missing $ inserted.
+./content.tex:168: Missing $ inserted.
 <inserted text> 
                 $
-l.129         \uses{def:fundamental_
+l.168         \uses{def:fundamental_
                                     group}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:129: Extra }, or forgotten $.
-l.129         \uses{def:fundamental_group}
+./content.tex:168: Extra }, or forgotten $.
+l.168         \uses{def:fundamental_group}
                                           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -785,18 +995,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:130: Missing $ inserted.
+./content.tex:169: Missing $ inserted.
 <inserted text> 
                 $
-l.130 
+l.169 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:130: Missing } inserted.
+./content.tex:169: Missing } inserted.
 <inserted text> 
                 }
-l.130 
+l.169 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -804,8 +1014,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./content.tex:136: Undefined control sequence.
-l.136         \uses
+./content.tex:175: Undefined control sequence.
+l.175         \uses
                    {def:fundamental_group}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -813,16 +1023,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:136: Missing $ inserted.
+
+
+[2]
+./content.tex:175: Missing $ inserted.
 <inserted text> 
                 $
-l.136         \uses{def:fundamental_
+l.175         \uses{def:fundamental_
                                     group}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:136: Extra }, or forgotten $.
-l.136         \uses{def:fundamental_group}
+./content.tex:175: Extra }, or forgotten $.
+l.175         \uses{def:fundamental_group}
                                           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -830,18 +1043,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:137: Missing $ inserted.
+./content.tex:176: Missing $ inserted.
 <inserted text> 
                 $
-l.137 
+l.176 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:137: Missing } inserted.
+./content.tex:176: Missing } inserted.
 <inserted text> 
                 }
-l.137 
+l.176 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -849,8 +1062,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./content.tex:143: Undefined control sequence.
-l.143         \uses
+./content.tex:182: Undefined control sequence.
+l.182         \uses
                    {def:fundamental_group}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -858,16 +1071,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:143: Missing $ inserted.
+./content.tex:182: Missing $ inserted.
 <inserted text> 
                 $
-l.143         \uses{def:fundamental_
+l.182         \uses{def:fundamental_
                                     group}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:143: Extra }, or forgotten $.
-l.143         \uses{def:fundamental_group}
+./content.tex:182: Extra }, or forgotten $.
+l.182         \uses{def:fundamental_group}
                                           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -875,18 +1088,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:144: Missing $ inserted.
+./content.tex:183: Missing $ inserted.
 <inserted text> 
                 $
-l.144 
+l.183 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:144: Missing } inserted.
+./content.tex:183: Missing } inserted.
 <inserted text> 
                 }
-l.144 
+l.183 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -894,8 +1107,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./content.tex:152: Undefined control sequence.
-l.152         \uses
+./content.tex:191: Undefined control sequence.
+l.191         \uses
                    {lem:loop_comp_inv, lem:loop_comp_neutral, lem:loop_comp_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -903,16 +1116,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:152: Missing $ inserted.
+./content.tex:191: Missing $ inserted.
 <inserted text> 
                 $
-l.152         \uses{lem:loop_
+l.191         \uses{lem:loop_
                              comp_inv, lem:loop_comp_neutral, lem:loop_comp_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:152: Extra }, or forgotten $.
-l.152 ...m:loop_comp_neutral, lem:loop_comp_assoc}
+./content.tex:191: Extra }, or forgotten $.
+l.191 ...m:loop_comp_neutral, lem:loop_comp_assoc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -920,18 +1133,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:153: Missing $ inserted.
+./content.tex:192: Missing $ inserted.
 <inserted text> 
                 $
-l.153 
+l.192 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:153: Missing } inserted.
+./content.tex:192: Missing } inserted.
 <inserted text> 
                 }
-l.153 
+l.192 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -940,12 +1153,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (67.45795pt too wide) in paragraph at lines 152--153
-[]\TU/lmr/bx/n/10 Theorem 18 \TU/lmr/m/n/10 (Fundamental Group is a Group)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 lem:loop$[]\OML/cmm/m/it/10 omp[]nv; lem \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 loop[]omp[]eutral; lem \OT1/cmr/m/n/10 :
+Overfull \hbox (67.45795pt too wide) in paragraph at lines 191--192
+[]\TU/lmr/bx/n/10 Theorem 23 \TU/lmr/m/n/10 (Fundamental Group is a Group)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 lem:loop$[]\OML/cmm/m/it/10 omp[]nv; lem \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 loop[]omp[]eutral; lem \OT1/cmr/m/n/10 :
  []
 
-./content.tex:159: Undefined control sequence.
-l.159         \uses
+./content.tex:198: Undefined control sequence.
+l.198         \uses
                    {thm:fundamental_group_is_group, lem:Rn_path_equiv_lemma}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -953,16 +1166,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./content.tex:159: Missing $ inserted.
+./content.tex:198: Missing $ inserted.
 <inserted text> 
                 $
-l.159         \uses{thm:fundamental_
+l.198         \uses{thm:fundamental_
                                     group_is_group, lem:Rn_path_equiv_lemma}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:159: Extra }, or forgotten $.
-l.159 ..._group_is_group, lem:Rn_path_equiv_lemma}
+./content.tex:198: Extra }, or forgotten $.
+l.198 ..._group_is_group, lem:Rn_path_equiv_lemma}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -970,18 +1183,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./content.tex:160: Missing $ inserted.
+./content.tex:199: Missing $ inserted.
 <inserted text> 
                 $
-l.160 
+l.199 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./content.tex:160: Missing } inserted.
+./content.tex:199: Missing } inserted.
 <inserted text> 
                 }
-l.160 
+l.199 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -990,13 +1203,213 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (2.02568pt too wide) in paragraph at lines 159--160
-[]\TU/lmr/bx/n/10 Theorem 19 \TU/lmr/m/n/10 (Fundamental Group of $\U/msb/m/n/10 R[]$\TU/lmr/m/n/10 )\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 thm:fundamental$[]\OML/cmm/m/it/10 roup[]s[]roup; lem \OT1/cmr/m/n/10 :
+Overfull \hbox (2.02568pt too wide) in paragraph at lines 198--199
+[]\TU/lmr/bx/n/10 Theorem 24 \TU/lmr/m/n/10 (Fundamental Group of $\U/msb/m/n/10 R[]$\TU/lmr/m/n/10 )\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 thm:fundamental$[]\OML/cmm/m/it/10 roup[]s[]roup; lem \OT1/cmr/m/n/10 :
+ []
+
+./content.tex:207: Undefined control sequence.
+l.207         \uses
+                   {def:fundamental_group}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:207: Missing $ inserted.
+<inserted text> 
+                $
+l.207         \uses{def:fundamental_
+                                    group}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:207: Extra }, or forgotten $.
+l.207         \uses{def:fundamental_group}
+                                          
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:208: Missing $ inserted.
+<inserted text> 
+                $
+l.208 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:208: Missing } inserted.
+<inserted text> 
+                }
+l.208 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./content.tex:215: Undefined control sequence.
+l.215         \uses
+                   {def:beta_h_map}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:215: Missing $ inserted.
+<inserted text> 
+                $
+l.215         \uses{def:beta_
+                             h_map}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:215: Double subscript.
+l.215         \uses{def:beta_h_
+                               map}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./content.tex:215: Extra }, or forgotten $.
+l.215         \uses{def:beta_h_map}
+                                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:216: Missing $ inserted.
+<inserted text> 
+                $
+l.216 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:216: Missing } inserted.
+<inserted text> 
+                }
+l.216 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./content.tex:222: Undefined control sequence.
+l.222         \uses
+                   {def:beta_h_map}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:222: Missing $ inserted.
+<inserted text> 
+                $
+l.222         \uses{def:beta_
+                             h_map}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:222: Double subscript.
+l.222         \uses{def:beta_h_
+                               map}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./content.tex:222: Extra }, or forgotten $.
+l.222         \uses{def:beta_h_map}
+                                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:223: Missing $ inserted.
+<inserted text> 
+                $
+l.223 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:223: Missing } inserted.
+<inserted text> 
+                }
+l.223 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./content.tex:229: Undefined control sequence.
+l.229         \uses
+                   {lem:beta_h_map_iso}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:229: Missing $ inserted.
+<inserted text> 
+                $
+l.229         \uses{lem:beta_
+                             h_map_iso}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:229: Double subscript.
+l.229         \uses{lem:beta_h_
+                               map_iso}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./content.tex:229: Extra }, or forgotten $.
+l.229         \uses{lem:beta_h_map_iso}
+                                       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:230: Missing $ inserted.
+<inserted text> 
+                $
+l.230 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:230: Missing } inserted.
+<inserted text> 
+                }
+l.230 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (5.39572pt too wide) in paragraph at lines 229--230
+[]\TU/lmr/bx/n/10 Lemma 28 \TU/lmr/m/n/10 (Fundamental Group doesnt depend on base point)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 lem:beta$[][]\OML/cmm/m/it/10 ap[]so[]$ 
  []
 
 )
 
-[2] (./web.aux)
+[3] (./web.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
@@ -1015,19 +1428,19 @@ Package rerunfilecheck Warning: File `web.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `web.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A33519AC4A95E9CB8B579D203255C35E;344.
+(rerunfilecheck)             After:  87DB8F675B39172C45C3322FB430EFF5;544.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 17 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9019 strings out of 468457
- 137202 string characters out of 5445913
- 544975 words of memory out of 5000000
- 37359 multiletter control sequences out of 15000+600000
+ 9028 strings out of 468457
+ 137422 string characters out of 5445913
+ 546975 words of memory out of 5000000
+ 37368 multiletter control sequences out of 15000+600000
  633641 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,9n,79p,596b,1105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on web.pdf (4 pages).
+Output written on web.pdf (5 pages).

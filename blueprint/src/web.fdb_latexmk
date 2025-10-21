@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1760828520.19795 "/home/ru6by/Documents/lean/Hatcher/TopAlg/blueprint/src/web.tex" "web.pdf" "web" 1760828521.57882 2
+["pdflatex"] 1761065920.73022 "/home/ru6by/Documents/lean/Hatcher/TopAlg/blueprint/src/web.tex" "web.pdf" "web" 1761065922.08703 2
   "/home/ru6by/Documents/lean/Hatcher/TopAlg/blueprint/src/web.tex" 1760827529.98156 679 bb3336c6867c2455f55932b32f022d3f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -63,11 +63,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1753273864 5896369 026fc05a4d79f072b0ff3569eb2f3907 ""
   "/usr/local/texlive/2025/texmf.cnf" 1753273742.46226 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "blueprint.sty" 1760800730.55397 64 041de65dd253d01ad50ada0ef6772cd2 ""
-  "content.tex" 1760828519.13076 5829 e10a67ffabf8265e1550bf8d15c50a53 ""
+  "content.tex" 1761065919.51672 8182 66771dc60ee43f8f75e9c1d51405de21 ""
   "macros/common.tex" 1760827500.66176 820 60fafcc3aa944a5e60030581a943ef6b ""
   "macros/web.tex" 1760827499.09888 260 cdb7c9ac756cf5815dc98c2bb10a4f5b ""
-  "web.aux" 1760828521.35874 2090 bd37b17d0cb4986744e23f7b207f4869 "pdflatex"
-  "web.out" 1760828521.35974 344 a33519ac4a95e9cb8b579d203255c35e "pdflatex"
+  "web.aux" 1761065921.8767 3032 60bebcc768cdef325ae36e8d444b634c "pdflatex"
+  "web.out" 1761065921.8777 544 87db8f675b39172c45c3322fb430eff5 "pdflatex"
   "web.tex" 1760827529.98156 679 bb3336c6867c2455f55932b32f022d3f ""
   (generated)
   "web.aux"

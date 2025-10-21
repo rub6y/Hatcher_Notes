@@ -81,6 +81,17 @@
         $$
     \end{definition}
 
+    \begin{definition}[Inverse of paths]
+        \label{def:path_inverse}
+        \uses{def:path}
+
+        Given to paths $\gamma$ we definte $\bar{\gamma}$ (inverse of $\gamma$) by the formula:
+
+        $$
+            \bar{\gamma}(t) = \gamma(1-t)
+        $$
+    \end{definition}
+
     \begin{lemma}[Composition of paths is a path]
         \label{lem:path_comp_path}
         \uses{def:path,def:path_composition}
@@ -88,11 +99,25 @@
         Composition of paths is a path (The map given by \ref{def:path_composition} is continoues) 
     \end{lemma}
 
+    \begin{lemma}[Inverse of paths is a path]
+        \label{lem:path_inverse_path}
+        \uses{def:path,def:path_inverse}
+
+        Inverse of path is a path (The map given by \ref{def:path_inverse} is continoues) 
+    \end{lemma}
+
     \begin{lemma}[Composition of paths depend on homotopy class]
         \label{lem:path_comp_homoclass}
         \uses{def:path, def:path_composition, def:path_homotopy,thm:path_homotopy_equiv}
 
         If $f_0 \simeq_p f_1$ and $g_0 \simeq_p g_1$ then $f_0 \cdot g_0 \simeq_path f_1 \cdot g_1$ 
+    \end{lemma}
+
+    \begin{lemma}[Inverse of paths depend on homotopy class]
+        \label{lem:path_inverse_homoclass}
+        \uses{def:path, def:path_inverse, def:path_homotopy,thm:path_homotopy_equiv}
+
+        If $f_0,f_1$ are to homotopic paths then $\bar{f_0}, \bar{f_1}$ are also homotopic.
     \end{lemma}
 
     \begin{theorem}[Homotopy of loops is equvialence relation]
@@ -109,6 +134,13 @@
         Composition of loops is a loop.
     \end{lemma}
 
+    \begin{lemma}[Inverse of loop is a loop]
+        \label{lem:loop_inverse_loop}
+        \uses{def:loop,def:path_inverse_path}
+
+        Inverse of loop is a loop (The map given by \ref{def:path_inverse} is continoues) 
+    \end{lemma}
+
     \begin{lemma}[Composition of loops depend on homotopy class]
         \label{lem:loop_comp_homoclass}
         \uses{lem:loop_comp_loop, lem:path_comp_homoclass, thm:loop_homotopy_equiv}
@@ -116,9 +148,16 @@
         If $f_0 \simeq_p f_1$ and $g_0 \simeq_p g_1$ then $f_0 \cdot g_0 \simeq_p f_1 \cdot g_1$ 
     \end{lemma}
 
+    \begin{lemma}[Inverse of loops depend on homotopy class]
+        \label{lem:loop_inverse_homoclass}
+        \uses{lem:loop_inverse_loop, lem:path_inverse_homoclass, thm:loop_homotopy_equiv}
+
+        If $f_0,f_1$ are to homotopic loops then $\bar{f_0}, \bar{f_1}$ are also homotopic.
+    \end{lemma}
+
     \begin{definition}[Fundamental Group]
         \label{def:fundamental_group}
-        \uses{lem:loop_comp_homoclass}
+        \uses{lem:loop_comp_homoclass, lem:loop_inverse_homoclass}
 
         We definie the fundamental group of $(\pi_1(X, x_0),\cdot)$ as the set of equvialence classes of relation $\simeq$ with 
         the operation $\cdot$ - composition of loops
@@ -160,3 +199,37 @@
         
         The fundamental group of $\mathbb{R}^n$ is trivial
     \end{theorem}
+
+    \section{Fundamental Group properties}
+
+    \begin{definition}[$\beta_h$ map]
+        \label{def:beta_h_map}
+        \uses{def:fundamental_group}
+
+        Given a path $h$ from $x_0$ to $x_1$ we definie a map $\beta_h : \pi_1(X,x_0) \to \pi_1(X,x_1)$ as
+        $$\beta_h ([\gamma]) = [h \cdot \gamma \cdot \bar{h}]$$
+    \end{definition}
+
+    \begin{lemma}[$\beta_h$ map is well definied]
+        \label{lem:beta_h_map_welldef}
+        \uses{def:beta_h_map}
+
+        Map $\beta_h$ is well definied.
+    \end{lemma}
+
+    \begin{lemma}[$\beta_h$ map is isomorphism of groups]
+        \label{lem:beta_h_map_iso}
+        \uses{def:beta_h_map}
+
+        Map $\beta_h$ is an isomorphism.
+    \end{lemma}
+
+    \begin{lemma}[Fundamental Group doesnt depend on base point]
+        \label{fundamental_group_basepoint_dependence}
+        \uses{lem:beta_h_map_iso}
+
+        For path connected space fundamental groups based on $x_0, x_1$ are isomorphic. 
+    \end{lemma}
+
+
+

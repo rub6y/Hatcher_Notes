@@ -13,6 +13,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Homotopy Definitions</title>
+<link rel="next" href="sect0003.html" title="Fundamental Group properties" />
 <link rel="prev" href="sect0001.html" title="Fundamental Group of Circle" />
 <link rel="up" href="sect0001.html" title="Fundamental Group of Circle" />
 <link rel="stylesheet" href="styles/theme-white.css" />
@@ -37,6 +38,9 @@
   <ul class="sub-toc-1 active">
      <li class=" active current">
   <a href="sect0002.html"><span class="toc_ref">1.1</span> <span class="toc_entry">Homotopy Definitions</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">1.2</span> <span class="toc_entry">Fundamental Group properties</span></a>
  </li>
 
   </ul>
@@ -73,7 +77,7 @@
   <div class="definition_thmcontent">
   
 <p>Let \(X,Y\) be topological spaces. We say that maps \(f,g : X \to Y\) are homotopic (\(f \simeq g\)) iff there exists a continoues map \(H : X \times I \to Y\) such that for any \(x \in X\) </p>
-<div class="displaymath" id="a0000000004">
+<div class="displaymath" id="a0000000005">
   \[ H(x,0) = f(x) \text{ and } H(x,1) = g(x) \]
 </div>
 <p>. </p>
@@ -101,7 +105,7 @@
   <div class="definition_thmcontent">
   
 <p>A path between points \(x,y \in X\) is a continoues function \(\gamma : I \to X\) such that </p>
-<div class="displaymath" id="a0000000005">
+<div class="displaymath" id="a0000000006">
   \[ \gamma (0) = x \text{ and } \gamma (1) = y \]
 </div>
 
@@ -372,8 +376,55 @@
   <div class="definition_thmcontent">
   
 <p>Given to paths \(\gamma _1, \gamma _2\) we definte \(\gamma _1 \cdot \gamma _2\) by the formula: </p>
-<div class="displaymath" id="a0000000006">
+<div class="displaymath" id="a0000000007">
   \[  \gamma _1 \cdot \gamma _2 (t) = \begin{cases}  \gamma _1(2s), &  \text{if } t \leq \frac{1}{2}, \\ \gamma _2(1-2s), &  \text{if } t \geq \frac{1}{2} \end{cases}  \]
+</div>
+
+  </div>
+</div>
+<div class="definition_thmwrapper theorem-style-definition" id="def:path_inverse">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">9</span>
+    <span class="definition_thmtitle">Inverse of paths</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#def:path_inverse">#</a>
+    
+    
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+        <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+        
+        <ul class="uses">
+          
+          <li><a href="sect0002.html#def:path">Definition 2</a></li>
+          
+        </ul>
+    
+      </div>
+    </div>
+
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  
+<p>Given to paths \(\gamma \) we definte \(\bar{\gamma }\) (inverse of \(\gamma \)) by the formula: </p>
+<div class="displaymath" id="a0000000008">
+  \[  \bar{\gamma }(t) = \gamma (1-t)  \]
 </div>
 
   </div>
@@ -383,7 +434,7 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">9</span>
+    <span class="lemma_thmlabel">10</span>
     <span class="lemma_thmtitle">Composition of paths is a path</span>
     <div class="thm_header_extras">
 
@@ -424,12 +475,58 @@
 
   </div>
 </div>
+<div class="lemma_thmwrapper theorem-style-plain" id="lem:path_inverse_path">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">11</span>
+    <span class="lemma_thmtitle">Inverse of paths is a path</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#lem:path_inverse_path">#</a>
+    
+    
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+        <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+        
+        <ul class="uses">
+          
+          <li><a href="sect0002.html#def:path">Definition 2</a></li>
+          
+          <li><a href="sect0002.html#def:path_inverse">Definition 9</a></li>
+          
+        </ul>
+    
+      </div>
+    </div>
+
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  
+<p>Inverse of path is a path (The map given by <a href="sect0002.html#def:path_inverse">9</a> is continoues) </p>
+
+  </div>
+</div>
 <div class="lemma_thmwrapper theorem-style-plain" id="lem:path_comp_homoclass">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">10</span>
+    <span class="lemma_thmlabel">12</span>
     <span class="lemma_thmtitle">Composition of paths depend on homotopy class</span>
     <div class="thm_header_extras">
 
@@ -474,12 +571,62 @@
 
   </div>
 </div>
+<div class="lemma_thmwrapper theorem-style-plain" id="lem:path_inverse_homoclass">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">13</span>
+    <span class="lemma_thmtitle">Inverse of paths depend on homotopy class</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#lem:path_inverse_homoclass">#</a>
+    
+    
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+        <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+        
+        <ul class="uses">
+          
+          <li><a href="sect0002.html#def:path">Definition 2</a></li>
+          
+          <li><a href="sect0002.html#def:path_inverse">Definition 9</a></li>
+          
+          <li><a href="sect0002.html#def:path_homotopy">Definition 4</a></li>
+          
+          <li><a href="sect0002.html#thm:path_homotopy_equiv">Theorem 7</a></li>
+          
+        </ul>
+    
+      </div>
+    </div>
+
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  
+<p>If \(f_0,f_1\) are to homotopic paths then \(\bar{f_0}, \bar{f_1}\) are also homotopic. </p>
+
+  </div>
+</div>
 <div class="theorem_thmwrapper theorem-style-plain" id="thm:loop_homotopy_equiv">
   <div class="theorem_thmheading">
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">11</span>
+    <span class="theorem_thmlabel">14</span>
     <span class="theorem_thmtitle">Homotopy of loops is equvialence relation</span>
     <div class="thm_header_extras">
 
@@ -525,7 +672,7 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">12</span>
+    <span class="lemma_thmlabel">15</span>
     <span class="lemma_thmtitle">Composition of loops is a loop</span>
     <div class="thm_header_extras">
 
@@ -549,7 +696,7 @@
           
           <li><a href="sect0002.html#def:loop">Definition 3</a></li>
           
-          <li><a href="sect0002.html#lem:path_comp_path">Lemma 9</a></li>
+          <li><a href="sect0002.html#lem:path_comp_path">Lemma 10</a></li>
           
         </ul>
     
@@ -566,12 +713,56 @@
 
   </div>
 </div>
+<div class="lemma_thmwrapper theorem-style-plain" id="lem:loop_inverse_loop">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">16</span>
+    <span class="lemma_thmtitle">Inverse of loop is a loop</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#lem:loop_inverse_loop">#</a>
+    
+    
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+        <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+        
+        <ul class="uses">
+          
+          <li><a href="sect0002.html#def:loop">Definition 3</a></li>
+          
+        </ul>
+    
+      </div>
+    </div>
+
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  
+<p>Inverse of loop is a loop (The map given by <a href="sect0002.html#def:path_inverse">9</a> is continoues) </p>
+
+  </div>
+</div>
 <div class="lemma_thmwrapper theorem-style-plain" id="lem:loop_comp_homoclass">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">13</span>
+    <span class="lemma_thmlabel">17</span>
     <span class="lemma_thmtitle">Composition of loops depend on homotopy class</span>
     <div class="thm_header_extras">
 
@@ -593,11 +784,11 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#lem:loop_comp_loop">Lemma 12</a></li>
+          <li><a href="sect0002.html#lem:loop_comp_loop">Lemma 15</a></li>
           
-          <li><a href="sect0002.html#lem:path_comp_homoclass">Lemma 10</a></li>
+          <li><a href="sect0002.html#lem:path_comp_homoclass">Lemma 12</a></li>
           
-          <li><a href="sect0002.html#thm:loop_homotopy_equiv">Theorem 11</a></li>
+          <li><a href="sect0002.html#thm:loop_homotopy_equiv">Theorem 14</a></li>
           
         </ul>
     
@@ -614,12 +805,60 @@
 
   </div>
 </div>
+<div class="lemma_thmwrapper theorem-style-plain" id="lem:loop_inverse_homoclass">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">18</span>
+    <span class="lemma_thmtitle">Inverse of loops depend on homotopy class</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#lem:loop_inverse_homoclass">#</a>
+    
+    
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+        <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+        
+        <ul class="uses">
+          
+          <li><a href="sect0002.html#lem:loop_inverse_loop">Lemma 16</a></li>
+          
+          <li><a href="sect0002.html#lem:path_inverse_homoclass">Lemma 13</a></li>
+          
+          <li><a href="sect0002.html#thm:loop_homotopy_equiv">Theorem 14</a></li>
+          
+        </ul>
+    
+      </div>
+    </div>
+
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  
+<p>If \(f_0,f_1\) are to homotopic loops then \(\bar{f_0}, \bar{f_1}\) are also homotopic. </p>
+
+  </div>
+</div>
 <div class="definition_thmwrapper theorem-style-definition" id="def:fundamental_group">
   <div class="definition_thmheading">
     <span class="definition_thmcaption">
     Definition
     </span>
-    <span class="definition_thmlabel">14</span>
+    <span class="definition_thmlabel">19</span>
     <span class="definition_thmtitle">Fundamental Group</span>
     <div class="thm_header_extras">
 
@@ -641,7 +880,9 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#lem:loop_comp_homoclass">Lemma 13</a></li>
+          <li><a href="sect0002.html#lem:loop_comp_homoclass">Lemma 17</a></li>
+          
+          <li><a href="sect0002.html#lem:loop_inverse_homoclass">Lemma 18</a></li>
           
         </ul>
     
@@ -663,7 +904,7 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">15</span>
+    <span class="lemma_thmlabel">20</span>
     <span class="lemma_thmtitle">Composition is associative</span>
     <div class="thm_header_extras">
 
@@ -685,7 +926,7 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#def:fundamental_group">Definition 14</a></li>
+          <li><a href="sect0002.html#def:fundamental_group">Definition 19</a></li>
           
         </ul>
     
@@ -707,7 +948,7 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">16</span>
+    <span class="lemma_thmlabel">21</span>
     <span class="lemma_thmtitle">Composition has natural element</span>
     <div class="thm_header_extras">
 
@@ -729,7 +970,7 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#def:fundamental_group">Definition 14</a></li>
+          <li><a href="sect0002.html#def:fundamental_group">Definition 19</a></li>
           
         </ul>
     
@@ -751,7 +992,7 @@
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">17</span>
+    <span class="lemma_thmlabel">22</span>
     <span class="lemma_thmtitle">Composition has inverse</span>
     <div class="thm_header_extras">
 
@@ -773,7 +1014,7 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#def:fundamental_group">Definition 14</a></li>
+          <li><a href="sect0002.html#def:fundamental_group">Definition 19</a></li>
           
         </ul>
     
@@ -796,7 +1037,7 @@
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">18</span>
+    <span class="theorem_thmlabel">23</span>
     <span class="theorem_thmtitle">Fundamental Group is a Group</span>
     <div class="thm_header_extras">
 
@@ -818,11 +1059,11 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#lem:loop_comp_inv">Lemma 17</a></li>
+          <li><a href="sect0002.html#lem:loop_comp_inv">Lemma 22</a></li>
           
-          <li><a href="sect0002.html#lem:loop_comp_neutral">Lemma 16</a></li>
+          <li><a href="sect0002.html#lem:loop_comp_neutral">Lemma 21</a></li>
           
-          <li><a href="sect0002.html#lem:loop_comp_assoc">Lemma 15</a></li>
+          <li><a href="sect0002.html#lem:loop_comp_assoc">Lemma 20</a></li>
           
         </ul>
     
@@ -844,7 +1085,7 @@
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">19</span>
+    <span class="theorem_thmlabel">24</span>
     <span class="theorem_thmtitle">Fundamental Group of \(\mathbb {R}^n\)</span>
     <div class="thm_header_extras">
 
@@ -866,7 +1107,7 @@
         
         <ul class="uses">
           
-          <li><a href="sect0002.html#thm:fundamental_group_is_group">Theorem 18</a></li>
+          <li><a href="sect0002.html#thm:fundamental_group_is_group">Theorem 23</a></li>
           
           <li><a href="sect0002.html#lem:Rn_path_equiv_lemma">Lemma 5</a></li>
           
@@ -899,6 +1140,8 @@
   <a href="sect0001.html" title="Fundamental Group of Circle"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
 </a>
   <a href="sect0001.html" title="Fundamental Group of Circle"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0003.html" title="Fundamental Group properties"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
 </a>
 </nav>
 
